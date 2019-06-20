@@ -1055,7 +1055,7 @@ void TheThingsNode::WDT_stop()
   WDTCSR = 0 << WDP0 | 1 << WDP1 | 0 << WDP2 | 0 << WDP3;
   sei();
 
-  this->wdtStarted = true;
+  this->wdtStarted = false;
 }
 
 void TheThingsNode::deepSleep(void)
